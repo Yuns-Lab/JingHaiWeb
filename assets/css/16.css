@@ -20,15 +20,15 @@ body{
 }
 
 #know-community span i[type="redstone"]{
-    color: #9e0000;
+    color: #b10000;
 }
 
 #know-community span i[type="build"]{
-    color: #8d5e00;
+    color: #814900;
 }
 
 #know-community span i[type="sword"]{
-    color: #208071;
+    color: #158372;
 }
 
 #know-community #logo-container span{

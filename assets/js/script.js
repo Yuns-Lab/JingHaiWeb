@@ -24,13 +24,22 @@ function EditClockText(){
     document.querySelector("#clock-text").innerHTML = hour + ":" + minute + ":" + second
 }
 
+// Get Hour Now - Function
+function getHourNow(){
+    const now = new Date();
+    if (localStorage.getItem("hour") != null){
+        const hour = localStorage.getItem("hour") // debug
+        return hour
+    } else {
+        const hour = now.getHours();
+        return hour
+    }
+}
+
 // Make Time+Username & setElementsStyle - Function
 function getTimeText(){
-    const now = new Date();
-    const hour = now.getHours();
-    // const hour = localStorage.getItem("hour") // debug
+    const hour = getHourNow()
     const time_css = document.getElementById("time-css")
-    const body = document.querySelector("body")
     if (hour >= 23 || hour < 6){
         var TimeText = "夜已深，记得休息哦";
         time_css.setAttribute("href","/assets/css/23.css")
