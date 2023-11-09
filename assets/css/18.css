@@ -1,0 +1,40 @@
+body{
+    background-image: url(/assets/img/18.png);
+    background-color: #0F211DD0;
+}
+
+#main-title{
+    color: white;
+}
+
+#clock-svg{
+    fill: white;
+}
+
+#menu-btns button{
+    color: #a9abb3;
+}
+
+#menu-btns button:hover{
+    color: white
+}
+
+#know-community{
+    color: white;
+}
+
+#know-community span i[type="redstone"]{
+    color: #b60000;
+}
+
+#know-community span i[type="build"]{
+    color: #c09038;
+}
+
+#know-community span i[type="sword"]{
+    color: #3cb9a7;
+}
+
+#know-community #logo-container span{
+    color: #9e9d9da9;
+}
