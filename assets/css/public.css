@@ -18,16 +18,16 @@ body {
   width: 1920px;
   height: 1009px;
 }
-.apage:nth-child(3) {
+.apage.page2 {
   padding-left: 10vh;
-  width: 1820px;
+  width: auto;
   height: auto;
 }
 h1.part_title {
   font-size: 8vh;
   font-weight: 500;
   position: relative;
-  top: 5vh;
+  top: 80px;
   left: 5vh;
   width: 50vh;
 }
@@ -109,15 +109,17 @@ br {
   top: -2px;
   width: auto;
 }
-#menu-btns {
+#menu-btns,
+#nav-btns {
   position: absolute;
   top: 30vh;
   left: 62vh;
   display: flex;
-  gap: 10vh;
+  gap: 7vh;
   user-select: none;
 }
-#menu-btns button {
+#menu-btns button,
+#nav-btns button {
   font-family: "千里之行楷";
   background: none;
   border: none;
@@ -125,7 +127,8 @@ br {
   font-weight: 500;
   transition: color 0.25s ease-in-out;
 }
-#menu-btns button .btn-after {
+#menu-btns button .btn-after,
+#nav-btns button .btn-after {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vh;
   font-weight: bolder;
@@ -145,13 +148,54 @@ br {
   border-radius: 100%;
   transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
 }
-#menu-btns button:hover .btn-after {
+#menu-btns button:hover .btn-after,
+#nav-btns button:hover .btn-after {
   opacity: 1;
   top: -3px;
 }
-#menu-btns button:hover .btn-after span {
+#menu-btns button:hover .btn-after span,
+#nav-btns button:hover .btn-after span {
   position: relative;
   left: -0.8px;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 45px 2px rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#navbar #nav-btns {
+  position: relative;
+  top: 1.7vh;
+  left: 30%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+#navbar #nav-btns button {
+  color: #ffffff;
+}
+#navbar #nav-btns button:hover {
+  color: #000000;
+}
+#navbar #nav-clock {
+  position: absolute;
+  left: 170vh;
+  top: 1.7vh;
+}
+#navbar #nav-clock span {
+  position: relative;
+  left: 2vh;
+  top: -0.65vh;
+  width: auto;
+  color: white;
+  font-size: 36.44px;
 }
 #know-community {
   user-select: none;
@@ -161,7 +205,7 @@ br {
   font-size: 4vh;
   font-weight: 500;
   position: relative;
-  top: 10vh;
+  top: 12vh;
   left: 13vh;
 }
 #know-community span i {
@@ -170,7 +214,7 @@ br {
 #know-community #logo-container {
   position: relative;
   margin-left: 140vh;
-  bottom: 20vh;
+  bottom: 17vh;
 }
 #know-community #logo-container img {
   transform: scale(1.3);
@@ -190,7 +234,8 @@ br {
 #know-community #logo-container img:hover + span {
   top: 27vh;
 }
-#build-and-news {
+#building,
+#news {
   user-select: none;
   width: fit-content;
 }
@@ -200,6 +245,7 @@ br {
 }
 #connect-us .a-catg {
   position: relative;
+  top: 5vh;
   left: 10vh;
 }
 #connect-us .a-catg .a-line {
@@ -266,5 +312,6 @@ br {
   width: 424px;
   height: 233px;
   position: relative;
+  top: 5vh;
   left: 10vh;
 }

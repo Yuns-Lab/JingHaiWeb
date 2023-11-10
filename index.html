@@ -34,7 +34,11 @@
                 <i class="btn-after"><span>→</span></i>
             </button>
             <button onclick="javascript:scrollToBuilding()">
-                建筑与新闻
+                建筑展示
+                <i class="btn-after"><span>→</span></i>
+            </button>
+            <button onclick="javascript:scrollToNews()">
+                新闻放送
                 <i class="btn-after"><span>→</span></i>
             </button>
             <button onclick="javascript:scrollToConnectUs()">
@@ -43,8 +47,35 @@
             </button>
         </div>
     </div>
+    <!-- 顶部栏 (翻页过 1009px 时显示) -->
+    <div id="navbar">
+        <div id="nav-btns">
+            <button onclick="javascript:scrollToKnownCommunity()">
+                了解社区
+                <i class="btn-after"><span>→</span></i>
+            </button>
+            <button onclick="javascript:scrollToBuilding()">
+                建筑展示
+                <i class="btn-after"><span>→</span></i>
+            </button>
+            <button onclick="javascript:scrollToNews()">
+                新闻放送
+                <i class="btn-after"><span>→</span></i>
+            </button>
+            <button onclick="javascript:scrollToConnectUs()">
+                联系
+                <i class="btn-after"><span>→</span></i>
+            </button>
+        </div>
+        <div id="nav-clock">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="evenodd" id="clock-svg" opacity="1" d="M8.33,3.43h-1.47v6.13h0.02l3.81,2.2l0.74,-1.28l-3.1,-1.78v-0.01zM7.99,0c4.43,0 8.01,3.58 8.01,8c0,4.42 -3.58,8 -8.01,8c-4.41,0 -7.99,-3.58 -7.99,-8c0,-4.42 3.58,-8 7.99,-8z"></path>
+            </svg>
+            <span id="nav-clock-text"></span>
+        </div>
+    </div>
     <!-- 正文 -->
-    <div class="apage">
+    <div class="apage page2">
         <!-- 了解社区 -->
         <div id="know-community">
             <h1 class="part_title">了解社区</h1>
@@ -70,11 +101,13 @@
         </div>
         <br><br><br><br><br>
         <!-- 建筑与新闻 -->
-        <div id="build-and-news">
+        <div id="building">
             <h1 class="part_title">我们的建筑</h1>
             <br><br><br><br>
             <div class="img-missing"></div>
-            <br><br><br><br><br>
+        </div>
+        <br><br><br><br><br>
+        <div id="news">
             <h1 class="part_title">公会新闻</h1>
             <br><br><br><br>
             <div class="img-missing"></div>

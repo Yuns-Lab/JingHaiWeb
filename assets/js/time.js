@@ -22,6 +22,7 @@ function EditClockText(){
     if (minute < 10){ minute = repair[minute] }
     if (second < 10){ second = repair[second] }
     document.querySelector("#clock-text").innerHTML = hour + ":" + minute + ":" + second
+    document.querySelector("#nav-clock-text").innerHTML = hour + ":" + minute + ":" + second
 }
 
 // Get Hour Now - Function
