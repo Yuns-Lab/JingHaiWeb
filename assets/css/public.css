@@ -11,6 +11,7 @@
 }
 body {
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .apage {
   width: 1920px;
