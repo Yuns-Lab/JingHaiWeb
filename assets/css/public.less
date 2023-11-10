@@ -39,6 +39,10 @@ h1.part_title{
     width: 50vh;
 }
 
+br{
+    user-select: none;
+}
+
 // 顶部
 #main-title{
     position: relative;
@@ -159,6 +163,73 @@ h1.part_title{
 // 建筑与新闻
 #build-and-news{
     user-select: none;
+}
+
+#connect-us{
+    user-select: none;
+    .a-catg{
+        font-family: "千里之行楷";
+        position: relative;
+        left: 10vh;
+        .a-line{
+            display: flex;
+            gap: 7vh;
+            position: relative;
+            left: 3vh;
+            margin-top: 3vh;
+            .a-way{
+                display: flex;
+                .text{
+                    margin-left: 10px;
+                    .desp{
+                        display: block;
+                        font-size: 4vh;
+                        width: max-content;
+                        .dash_line{
+                            font-family: Arial, Helvetica, sans-serif;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .group-id{
+                        font-size: 3vh;
+                        margin-left: 5px;
+                        .after{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: small;
+                            position: relative;
+                            left: 5px;
+                            bottom: 4px;
+                            padding: 2px 6px;
+                            border-radius: 10px;
+                            opacity: 0;
+                            transition: opacity .3s ease-in-out;
+                        }
+                        &:hover .after{
+                            opacity: 1;
+                        }
+                    }
+                    &[catg="discord"] .group-id{
+                        margin-left: -5px;
+                        bottom: 0;
+                        &.after{
+                            bottom: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .way-catg-title{
+        font-size: 6vh;
+        font-weight: 400;
+    }
+    .way-tips{
+        position: relative;
+        left: 3vh;
+        font-size: 3vh;
+        font-weight: 500;
+    }
 }
 
 // img-missing's Image Style

@@ -30,6 +30,9 @@ body {
 #know-community #logo-container span {
   color: #555555a9;
 }
+#connect-us .a-catg .a-line .a-way .text .group-id .after {
+  background-color: white;
+}
 .img-missing {
   background-image: url("/assets/img/img-missing-dark.png");
   border-color: #00000025;

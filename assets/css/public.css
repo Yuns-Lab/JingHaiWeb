@@ -29,6 +29,9 @@ h1.part_title {
   left: 5vh;
   width: 50vh;
 }
+br {
+  user-select: none;
+}
 #main-title {
   position: relative;
   top: 7vh;
@@ -141,6 +144,72 @@ h1.part_title {
 }
 #build-and-news {
   user-select: none;
+}
+#connect-us {
+  user-select: none;
+}
+#connect-us .a-catg {
+  font-family: "千里之行楷";
+  position: relative;
+  left: 10vh;
+}
+#connect-us .a-catg .a-line {
+  display: flex;
+  gap: 7vh;
+  position: relative;
+  left: 3vh;
+  margin-top: 3vh;
+}
+#connect-us .a-catg .a-line .a-way {
+  display: flex;
+}
+#connect-us .a-catg .a-line .a-way .text {
+  margin-left: 10px;
+}
+#connect-us .a-catg .a-line .a-way .text .desp {
+  display: block;
+  font-size: 4vh;
+  width: max-content;
+}
+#connect-us .a-catg .a-line .a-way .text .desp .dash_line {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 5px;
+}
+#connect-us .a-catg .a-line .a-way .text .group-id {
+  font-size: 3vh;
+  margin-left: 5px;
+}
+#connect-us .a-catg .a-line .a-way .text .group-id .after {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  position: relative;
+  left: 5px;
+  bottom: 4px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#connect-us .a-catg .a-line .a-way .text .group-id:hover .after {
+  opacity: 1;
+}
+#connect-us .a-catg .a-line .a-way .text[catg="discord"] .group-id {
+  margin-left: -5px;
+  bottom: 0;
+}
+#connect-us .a-catg .a-line .a-way .text[catg="discord"] .group-id.after {
+  bottom: 2px;
+}
+#connect-us .way-catg-title {
+  font-size: 6vh;
+  font-weight: 400;
+}
+#connect-us .way-tips {
+  position: relative;
+  left: 3vh;
+  font-size: 3vh;
+  font-weight: 500;
 }
 .img-missing {
   border: 2px solid;

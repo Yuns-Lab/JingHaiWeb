@@ -12,3 +12,7 @@ function scrollToKnownCommunity(){
 function scrollToBuilding(){
     document.getElementById("build-and-news").scrollIntoView({behavior: 'smooth'})
 }
+
+function scrollToConnectUs(){
+    document.getElementById("connect-us").scrollIntoView({behavior: 'smooth'})
+}

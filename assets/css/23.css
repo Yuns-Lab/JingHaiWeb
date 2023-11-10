@@ -32,6 +32,12 @@ body {
 #build-and-news {
   color: white;
 }
+#connect-us {
+  color: white;
+}
+#connect-us .a-catg .a-line .a-way .text .group-id .after {
+  background-color: black;
+}
 .img-missing {
   background-image: url("/assets/img/img-missing-light.png");
   border-color: #ffffff10;
