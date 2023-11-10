@@ -13,7 +13,7 @@
 - [`index.html`](blob/main/index.html)：网页主 HTML 文件
 - [`assets/css`](blob/main/assets/css)：网页样式文件：
   - [`fonts`](/blob/main/assets/css/fonts): 网页字体文件
-  - `*.css`：网页样式文件，由 VSCode 插件自动生成
+  - `*.css`：网页样式文件，由 VSCode 插件自动生成 <sup><span style="color:yellow">!</span></sup>
   - `*.less`：网页样式文件源
 - [`assets/js`](blob/main/assets/js)：网页脚本文件
 - [`assets/img`](blob/main/assets/img)：网页图片文件
