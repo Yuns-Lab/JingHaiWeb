@@ -2,6 +2,12 @@ body {
   background-image: url(/assets/img/23.png);
   background-color: #0F1B23DE;
 }
+#page-loading {
+  background-color: #0F1B23;
+}
+#page-loading i {
+  border-color: #0F1B23;
+}
 #main-title {
   color: white;
 }

@@ -43,6 +43,46 @@ br{
     user-select: none;
 }
 
+// 加载动画
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#page-loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483647;
+    opacity: 1;
+    transition: opacity 0.5s;
+    h2{
+        font-family: "千里之行楷";
+        font-size: 2rem;
+        font-weight: 400;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white
+    }
+    i{
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 24px);
+        border: 7px solid;
+        border-radius: 100%;
+        border-top: 7px solid;
+        border-top-color: white !important;
+        color: white;
+        width: 30px;
+        height: 30px;
+        animation: spin 2s linear infinite;
+    }
+}
+
 // 顶部
 #main-title{
     position: relative;
@@ -240,6 +280,6 @@ br{
     border-radius: 30px;
     width: 424px;
     height: 233px;
-    position:relative; 
-    left:10vh;
+    position: relative; 
+    left: 10vh;
 }
