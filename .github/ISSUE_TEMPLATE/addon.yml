@@ -1,5 +1,5 @@
 name: "优化建议"
-description: "对已有功能的小幅度优化或改进建议"
+description: "对已有的内容进行小幅度改进"
 labels: [· 优化, 新反馈]
 body:
   - type: markdown
