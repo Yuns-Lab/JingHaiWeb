@@ -31,10 +31,10 @@ body:
       description: "详细描述你为什么需要这项优化，这有助于开发者评估它的优先度。"
     validations:
       required: true
-    - type: checkboxes
-      id: "yml-4"
-      attributes:
-        label: "意向调查"
-        description: "如果您愿意贡献代码来修复此 Bug，请勾选下方内容"
-        options:
-        - label: "我愿意为此反馈做出贡献"
+  - type: checkboxes
+    id: "yml-4"
+    attributes:
+      label: "意向调查"
+      description: "如果您愿意贡献代码来修复此 Bug，请勾选下方内容"
+      options:
+      - label: "我愿意为此反馈做出贡献"
