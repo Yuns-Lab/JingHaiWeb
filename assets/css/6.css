@@ -1,44 +1,34 @@
-body{
-    background-image: url(/assets/img/6.png);
-    background-color: #524A18B0;
+body {
+  background-image: url(/assets/img/6.png);
+  background-color: #524A18B0;
 }
-
-#main-title{
-    color: white;
+#main-title {
+  color: white;
 }
-
-#clock-svg{
-    fill: white;
+#clock-svg {
+  fill: white;
 }
-
-#menu-btns button{
-    color: #ffffff;
+#menu-btns button {
+  color: #ffffff;
 }
-
-#menu-btns button:hover{
-    color: #000000;
+#menu-btns button:hover {
+  color: #000000;
 }
-
-#know-community{
-    color: #dfdfdf;
+#know-community {
+  color: #dfdfdf;
 }
-
-#know-community span i[type="redstone"]{
-    color: #b60000;
+#know-community span i[type="redstone"] {
+  color: #b60000;
 }
-
-#know-community span i[type="build"]{
-    color: #c09038;
+#know-community span i[type="build"] {
+  color: #c09038;
 }
-
-#know-community span i[type="sword"]{
-    color: #3cb9a7;
+#know-community span i[type="sword"] {
+  color: #3cb9a7;
 }
-
-#know-community #logo-container span{
-    color: #272727a9;
+#know-community #logo-container span {
+  color: #272727a9;
 }
-
-#build-and-news{
-    color: #dfdfdf;
+#build-and-news {
+  color: #dfdfdf;
 }

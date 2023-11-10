@@ -1,36 +1,28 @@
-body{
-    background-image: url(/assets/img/16.png);
-    background-color: #5F662BB0;
+body {
+  background-image: url(/assets/img/16.png);
+  background-color: #5F662BB0;
 }
-
-#main-title{
-    color: white;
-}   
-
-#clock-svg{
-    fill: white;
+#main-title {
+  color: white;
 }
-
-#menu-btns button{
-    color: white;
+#clock-svg {
+  fill: white;
 }
-
-#menu-btns button:hover{
-    color: #d4d5db;
+#menu-btns button {
+  color: white;
 }
-
-#know-community span i[type="redstone"]{
-    color: #b10000;
+#menu-btns button:hover {
+  color: #d4d5db;
 }
-
-#know-community span i[type="build"]{
-    color: #814900;
+#know-community span i[type="redstone"] {
+  color: #b10000;
 }
-
-#know-community span i[type="sword"]{
-    color: #158372;
+#know-community span i[type="build"] {
+  color: #814900;
 }
-
-#know-community #logo-container span{
-    color: #272727a9;
+#know-community span i[type="sword"] {
+  color: #158372;
+}
+#know-community #logo-container span {
+  color: #272727a9;
 }

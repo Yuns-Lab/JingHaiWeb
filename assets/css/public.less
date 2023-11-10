@@ -1,0 +1,170 @@
+// Clear Default Margin/Padding for All Elements
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// Fonts
+@font-face{
+    font-family: "千里之行楷";
+    src: url("./fonts/QianLiZhiXingKai-2.ttf") format("truetype");
+}
+
+// Public Main Style
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-repeat: no-repeat;
+    // width: 1920px;
+}
+
+.apage{
+    height: 109.3vh;
+    width: 100vh;
+    &:nth-child(2){
+        margin: 0 10vh;
+        height: auto;
+    }
+}
+
+h1.part_title{
+    font-family: "千里之行楷";
+    font-size: 8vh;
+    font-weight: 500;
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    width: 50vh;
+}
+
+// 顶部
+#main-title{
+    position: relative;
+    top: 7vh;
+    left: 24vh;
+    user-select: none;
+    width: 50vh;
+    h1{
+        font-family: "千里之行楷";
+        font-size: 12vh;
+        font-weight: 500;
+    }
+    span{
+        position: relative;
+        top: 1vh;
+        left: 21vh;
+        font-family: "千里之行楷";
+        font-size: 4vh;
+        font-weight: 500;
+        display: block;
+        width: 64vh;
+    }
+    #clock{
+        display: flex;
+        position: absolute;
+        left: 150vh;
+        bottom: 8vh;
+        span{
+            position: relative;
+            left: 3vh;
+            top: -2px;
+            width: auto;
+        }
+    }
+    
+}
+
+#menu-btns{
+    position: absolute;
+    top: 33vh;
+    left: 62vh;
+    display: flex;
+    gap: 10vh;
+    user-select: none;
+    button{
+        background: none;
+        border: none;
+        font-size: 2vh;
+        font-weight: 600;
+        transition: color .25s ease-in-out;
+        &::after{
+            content: "→";
+            position: relative;
+            top: 6px;
+            left: 5px;
+            opacity: 0;
+            display: inline-flex;
+            flex-wrap: unset;
+            align-content: center;
+            justify-content: center;
+            padding-left: 1px;
+            padding-bottom: 1px;
+            color: black;
+            width: 22px;
+            height: 22px;
+            background-color: #ffc107;
+            border-radius: 100%;
+            transition: opacity .3s ease-in-out,
+                        top .3s ease-in-out;
+        }
+        &:hover::after{
+            opacity: 1;
+            top: -1px;
+        }
+    }
+}
+
+// 了解社区
+#know-community{
+    width: 100%;
+    user-select: none;
+    span{
+        font-family: "千里之行楷";
+        font-size: 4vh;
+        font-weight: 500;
+        position: relative;
+        top: 10vh;
+        left: 13vh;
+        i{
+            font-style: normal;
+        }
+    }
+    #logo-container{
+        position: relative;
+        margin-left: 140vh;
+        bottom: 20vh;
+        img{
+            transform: scale(1.3);
+            transition: transform .5s ease-in-out;
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+        span{
+            font-size: 2rem;
+            position: absolute;
+            left: 3.5vh;
+            top: 25vh;
+            width: 130px;
+            transition: top .4s ease-in-out;
+        }
+        img:hover + span{
+            top: 27vh
+        }
+    }
+}
+
+// 建筑与新闻
+#build-and-news{
+    user-select: none;
+}
+
+// img-missing's Image Style
+.img-missing-light{
+    border: #ffffff10 2px solid;
+    border-radius: 30px;
+    width: 424px;
+    height: 233px;
+}
