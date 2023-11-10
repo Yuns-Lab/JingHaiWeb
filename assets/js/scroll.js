@@ -8,3 +8,7 @@ function scrollToTop(){
 function scrollToKnownCommunity(){
     document.getElementById("know-community").scrollIntoView({behavior: 'smooth'})
 }
+
+function scrollToBuilding(){
+    document.getElementById("build-and-news").scrollIntoView({behavior: 'smooth'})
+}

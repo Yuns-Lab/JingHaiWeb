@@ -25,14 +25,14 @@
         </div>
         <div id="menu-btns">
             <button onclick="javascript:scrollToKnownCommunity()">了解社区</button>
-            <button>建筑与新闻</button>
-            <button>联系</button>
+            <button onclick="javascript:scrollToBuilding()">建筑与新闻</button>
+            <button onclick="javascript:console.log('pass')">联系</button>
         </div>
     </div>
     <div class="apage">
         <!-- 了解社区 -->
         <div id="know-community">
-            <h1>了解社区</h1>
+            <h1 class="part_title">了解社区</h1>
             <span>
                 京海公会 , 由会长 LingyunAwA 创建 , 集<i type="redstone">红石</i>/<i type="build">建筑</i>/<i type="sword">战斗</i>
                 <br>
@@ -49,9 +49,19 @@
                 困难 , 抑或是想加入我们 , 欢迎进服联系
             </span>
             <div id="logo-container">
-                <img src="jhlogo.png">
+                <img src="jhlogo.png" alt="公会 Logo">
                 <span>公会 Logo</span>
             </div>
+        </div>
+        <br><br><br><br><br>
+        <div id="build-and-news">
+            <h1 class="part_title">我们的建筑</h1>
+            <br><br><br><br>
+            <img src="/assets/img/img-missing-light.png" style="position:relative; left:10vh;" class="img-missing-light" alt="图片不见了">
+            <br><br><br><br><br>
+            <h1 class="part_title">公会新闻</h1>
+            <br><br><br><br>
+            <img src="/assets/img/img-missing-light.png" style="position:relative; left:10vh;" class="img-missing-light" alt="图片不见了">
         </div>
     </div>
     <!-- Start: JavaScript -->
