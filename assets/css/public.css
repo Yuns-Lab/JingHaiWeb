@@ -31,6 +31,9 @@ h1.part_title {
   left: 5vh;
   width: 50vh;
 }
+h1.part_title.small {
+  font-size: 6vh;
+}
 br {
   user-select: none;
 }
@@ -146,6 +149,10 @@ br {
   opacity: 1;
   top: -3px;
 }
+#menu-btns button:hover .btn-after span {
+  position: relative;
+  left: -0.8px;
+}
 #know-community {
   user-select: none;
   width: fit-content;
@@ -210,7 +217,7 @@ br {
 }
 #connect-us .a-catg .a-line .a-way .text .desp {
   display: block;
-  font-size: 4vh;
+  font-size: 3vh;
   width: max-content;
 }
 #connect-us .a-catg .a-line .a-way .text .desp .dash_line {
@@ -219,16 +226,16 @@ br {
   top: 5px;
 }
 #connect-us .a-catg .a-line .a-way .text .group-id {
-  font-size: 3vh;
+  font-size: 2.5vh;
   margin-left: 5px;
 }
 #connect-us .a-catg .a-line .a-way .text .group-id .after {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+  font-size: 10px;
   position: relative;
   left: 5px;
-  bottom: 4px;
-  padding: 2px 6px;
+  bottom: 3px;
+  padding: 3px 6px;
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -244,7 +251,7 @@ br {
   bottom: 2px;
 }
 #connect-us .way-catg-title {
-  font-size: 6vh;
+  font-size: 4.5vh;
   font-weight: 400;
 }
 #connect-us .way-tips {
