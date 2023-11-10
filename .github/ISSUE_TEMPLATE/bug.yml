@@ -37,3 +37,10 @@ body:
       placeholder: "先点击这个文本框，然后直接黏贴或拖动文件上传"
     validations:
       required: true
+  - type: checkboxes
+    id: "yml-5"
+    attributes:
+      label: "意向调查"
+      description: "如果您愿意贡献代码来修复此 Bug，请勾选下方内容"
+      options:
+      - label: "我愿意为此反馈做出贡献"
