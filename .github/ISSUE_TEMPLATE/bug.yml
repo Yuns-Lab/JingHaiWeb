@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        >[!NOTE]
-        >Highlights information that users should take into account, even when skimming.
+        感谢您对网站的贡献！
+        请仔细填写以下内容，方便我们快速排查问题！
   - type: checkboxes
     id: "yml-1"
     attributes:
