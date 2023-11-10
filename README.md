@@ -11,11 +11,11 @@
 **代码结构解释：**
 
 - [`index.html`](blob/main/index.html)：网页主 HTML 文件
-- [`assets/css`](blob/main/assets/css)：网页样式文件
-  
-  其中
+- [`assets/css`](blob/main/assets/css)：网页样式文件：
   - [`fonts`](/blob/main/assets/css/fonts): 网页字体文件
   - `*.css`：网页样式文件，由 VSCode 插件自动生成
   - `*.less`：网页样式文件源
+  > [!IMPORTANT]
+  > 你通常不应当直接修改 `*.css` 文件，而是修改 `*.less` 文件后由插件编译
 - [`assets/js`](blob/main/assets/js)：网页脚本文件
 - [`assets/img`](blob/main/assets/img)：网页图片文件
