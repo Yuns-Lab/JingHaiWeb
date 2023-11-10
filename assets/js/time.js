@@ -40,30 +40,38 @@ function getHourNow(){
 // Make Time+Username & setElementsStyle - Function
 function getTimeText(){
     const hour = getHourNow()
-    const time_css = document.getElementById("time-css")
     if (hour >= 23 || hour < 6){
         var TimeText = "夜已深，记得休息哦";
-        time_css.setAttribute("href","/assets/css/23.css")
+        editCssFileName("/assets/css/23.css")
     } else if (hour >= 6 && hour < 8){
         var TimeText = "早上好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/6.css")
+        editCssFileName("/assets/css/6.css")
     } else if (hour >= 8 && hour < 12){
         var TimeText = "上午好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/8.css")
+        editCssFileName("/assets/css/8.css")
     } else if (hour >= 12 && hour < 14){
         var TimeText = "中午好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/12.css")
+        editCssFileName("/assets/css/12.css")
     } else if (hour >= 14 && hour < 16){
         var TimeText = "下午好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/14.css")
+        editCssFileName("/assets/css/14.css")
     } else if (hour >= 16 && hour < 18){
         var TimeText = "傍晚好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/16.css")
+        editCssFileName("/assets/css/16.css")
     } else if (hour >= 18 && hour < 23){
         var TimeText = "晚上好, " + localStorage.getItem("username");
-        time_css.setAttribute("href","/assets/css/18.css")
+        editCssFileName("/assets/css/18.css")
     }
     return TimeText;
+}
+
+// EditCssFileName - Function
+function editCssFileName(target_css_file){
+    const time_css = document.getElementById("time-css")
+    const time_css_href = time_css.getAttribute("href")
+    if (target_css_file != time_css_href){
+        time_css.setAttribute("href", target_css_file)
+    }
 }
 
 // Repeat - Function

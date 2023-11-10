@@ -18,10 +18,8 @@ function editNavbar(){
         // 当页面垂直滚动距离大于1009px时
         if (window.scrollY > 1000) {
             document.getElementById('navbar').style.opacity = 1
-            console.info("element-set-to:1")
         } else {
             document.getElementById('navbar').style.opacity = 0
-            console.info("element-set-to:0")
         }
     };
 }
