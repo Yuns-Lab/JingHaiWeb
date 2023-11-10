@@ -3,11 +3,11 @@ description: "遇见了看起来不对劲的地方"
 labels: [· Bug,新反馈]
 body:
   - type: markdown
-      attributes:
-        value: |
-          > [!INFO]
-          > 感谢您对网站的贡献！
-          > 请仔细填写以下内容，方便我们快速排查问题！
+    attributes:
+      value: |
+        > [!INFO]
+        > 感谢您对网站的贡献！
+        > 请仔细填写以下内容，方便我们快速排查问题！
   - type: checkboxes
     id: "yml-1"
     attributes:
