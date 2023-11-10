@@ -15,7 +15,7 @@
     <p>
 
     - [`fonts`](/blob/main/assets/css/fonts): 网页字体文件
-    - `*.css`：网页样式文件，由 VSCode 插件自动生成 <sup><span style="color:yellow">!</span></sup>
+    - `*.css`：网页样式文件，由 VSCode 插件自动生成 <sup>*<span style="color:yellow">!</span>*</sup>
     - `*.less`：网页样式文件源
 
     <p>
