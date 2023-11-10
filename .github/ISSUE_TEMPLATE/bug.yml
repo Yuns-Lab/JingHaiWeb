@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        > [!NOTE]
-        > Highlights information that users should take into account, even when skimming.
+        >[!NOTE]
+        >Highlights information that users should take into account, even when skimming.
   - type: checkboxes
     id: "yml-1"
     attributes:
