@@ -32,3 +32,7 @@ body {
 #build-and-news {
   color: #dfdfdf;
 }
+.img-missing {
+  background-image: url("/assets/img/img-missing-light.png");
+  border-color: #ffffff10;
+}
