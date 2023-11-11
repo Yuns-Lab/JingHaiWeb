@@ -179,22 +179,25 @@ br {
   width: max-content;
 }
 #navbar #nav-btns button {
-  color: #ffffff;
+  color: black;
 }
 #navbar #nav-btns button:hover {
-  color: #000000;
+  color: #505051;
 }
 #navbar #nav-clock {
   position: absolute;
   left: 170vh;
   top: 1.7vh;
 }
+#navbar #nav-clock #nav-clock-svg {
+  fill: black;
+}
 #navbar #nav-clock span {
   position: relative;
   left: 2vh;
   top: -0.65vh;
   width: auto;
-  color: white;
+  color: black;
   font-size: 36.44px;
 }
 #know-community {
@@ -305,6 +308,39 @@ br {
   left: 3vh;
   font-size: 3vh;
   font-weight: 500;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff80;
+  box-shadow: 0 0 0 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: bottom 0.2s ease-in-out, right 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+#back-to-top[mode=show] {
+  opacity: 1;
+  bottom: 90px;
+  right: 30px;
+}
+#back-to-top:hover {
+  bottom: 100px;
+  right: 40px;
+  box-shadow: 5px 5px 10px 0 #ffffff29;
+  background-color: #ffffffB0;
+}
+#back-to-top:active {
+  bottom: 97px;
+  right: 37px;
+  box-shadow: 2px 2px 10px 0 #ffffff29;
+  transition: bottom 0.1s ease-in-out, right 0.1s ease-in-out;
+}
+#back-to-top svg {
+  position: relative;
+  right: 1px;
 }
 .img-missing {
   border: 2px solid;

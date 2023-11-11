@@ -14,12 +14,16 @@ window.onload = function() {
 }
 
 function editNavbar(){
+    const navbar = document.getElementById('navbar')
+    const back_to_top = document.getElementById('back-to-top')
     window.onscroll = function() {
         // 当页面垂直滚动距离大于1009px时
         if (window.scrollY > 1000) {
-            document.getElementById('navbar').style.opacity = 1
+            navbar.style.opacity = 1
+            back_to_top.setAttribute('mode','show')
         } else {
-            document.getElementById('navbar').style.opacity = 0
+            navbar.style.opacity = 0
+            back_to_top.setAttribute('mode','hide')
         }
     };
 }
