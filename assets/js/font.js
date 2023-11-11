@@ -16,3 +16,5 @@ function setFontFace(fontName, srcPath) {
     "));
     document.head.appendChild(newStyle);
 }
+
+setFontPathWithEnv();
