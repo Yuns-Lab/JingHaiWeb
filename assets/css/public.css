@@ -3,10 +3,6 @@
   padding: 0;
   user-select: none;
 }
-@font-face {
-  font-family: "千里之行楷";
-  src: url("https://lingyuncdn.rth1.app/QianLiZhiXingKai-2.woff") format("woff");
-}
 ::-webkit-scrollbar {
   display: none;
 }

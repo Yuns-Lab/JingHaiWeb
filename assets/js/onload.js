@@ -1,5 +1,6 @@
 window.onload = function() {
     // 页面内容初始化函数
+    setFontPathWithEnv()
     editTitle()
     editNavbar()
     scrollToTop()
