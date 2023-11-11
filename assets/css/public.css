@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: "千里之行楷";
-  src: url("fonts/QianLiZhiXingKai-2.woff") format("truetype");
+  src: url("fonts/QianLiZhiXingKai-2.woff") format("woff");
 }
 ::-webkit-scrollbar {
   display: none;
