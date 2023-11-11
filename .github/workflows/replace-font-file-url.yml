@@ -1,0 +1,23 @@
+name: Replace Font URL
+on:
+  push:
+    paths:
+      - 'assets/css/public.css'
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Replace font URL
+        run: |
+          sed -i 's|fonts/QianLiZhiXingKai-2.woff|https://lingyuncdn.rth1.app/QianLiZhiXingKai-2.woff|g' assets/css/public.css
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am ":construction_worker: CI：Replace FontFile's url" || echo "No changes to commit"
+          git push
