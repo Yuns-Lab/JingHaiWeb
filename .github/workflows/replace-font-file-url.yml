@@ -1,4 +1,8 @@
 name: Replace Font URL
+
+permissions:
+  contents: write
+
 on:
   push:
     paths:
@@ -17,8 +21,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "1913532130@qq.com"
-          git config --local user.name "lingyunawa"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git commit -am ":construction_worker: CI：Replace FontFile's url" || echo "CI：No changes to commit"
-          git remote set-url origin https://x-access-token:${{ secrets.CI_COMMIT_SECRET }}@github.com/Yuns-Lab/JingHaiWeb.git
+          git remote set-url origin https://github.com/Yuns-Lab/JingHaiWeb.git
           git push
