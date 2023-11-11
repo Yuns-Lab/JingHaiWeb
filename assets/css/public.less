@@ -1,7 +1,8 @@
-// Clear Default Margin/Padding for All Elements
+// Clear Default Margin/Padding & Reject User-Select for All Elements
 *{
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 // Fonts
@@ -41,10 +42,6 @@ h1.part_title{
     &.small{
         font-size: 6vh;
     }
-}
-
-br{
-    user-select: none;
 }
 
 // 加载动画
@@ -91,7 +88,6 @@ br{
     position: relative;
     top: 7vh;
     left: 24vh;
-    user-select: none;
     width: 50vh;
     h1{
         font-size: 12vh;
@@ -127,7 +123,6 @@ br{
     left: 62vh;
     display: flex;
     gap: 7vh;
-    user-select: none;
     button{
         font-family: "千里之行楷";
         background: none;
@@ -176,7 +171,6 @@ br{
     height: 60px;
     background-color: rgba(255, 255, 255, .5);
     backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 45px 2px rgba(255, 255, 255, .5);
     z-index: 2;
     opacity: 0;
     transition: opacity .5s ease-in-out;
@@ -214,7 +208,6 @@ br{
 
 // 了解社区
 #know-community{
-    user-select: none;
     width: fit-content;
     span{
         font-size: 4vh;
@@ -253,12 +246,10 @@ br{
 
 // 建筑与新闻
 #building, #news{
-    user-select: none;
     width: fit-content;
 }
 
 #connect-us{
-    user-select: none;
     width: fit-content;
     .a-catg{
         position: relative;
@@ -332,7 +323,7 @@ br{
     width: 48px;
     height: 48px;
     background-color: #ffffff80;
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0 #00000000;
     border-radius: 10px;
     opacity: 0;
     transition: bottom           .2s ease-in-out,
@@ -348,13 +339,11 @@ br{
     &:hover{
         bottom: 100px;
         right: 40px;
-        box-shadow: 5px 5px 10px 0 #ffffff29;
         background-color: #ffffffB0;
     }
     &:active{
         bottom: 97px;
         right: 37px;
-        box-shadow: 2px 2px 10px 0 #ffffff29;
         transition: bottom .1s ease-in-out,
                     right  .1s ease-in-out,
     }
