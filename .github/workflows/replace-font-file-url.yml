@@ -21,3 +21,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git commit -am ":construction_worker: CI：Replace FontFile's url" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
