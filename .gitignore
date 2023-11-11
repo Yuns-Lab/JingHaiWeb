@@ -3,3 +3,6 @@
 
 # 测试样板
 /demos
+
+# TTF 字体
+/assets/css/fonts/*.ttf
