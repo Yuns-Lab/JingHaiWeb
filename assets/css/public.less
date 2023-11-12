@@ -96,19 +96,30 @@ h1.part_title{
         display: block;
         width: 64vh;
     }
-    #clock{
-        display: flex;
+}
+
+#clock{
+    display: flex;
+    position: absolute;
+    right: 26.9vh;
+    top: 12vh;
+    #clock-svg{
         position: absolute;
-        left: 150vh;
-        bottom: 8vh;
-        span{
-            position: relative;
-            left: 3vh;
-            top: -2px;
-            width: auto;
+        right: calc(23px + 9vh);
+        #clock-svg-path{
+            fill: white;
         }
     }
-    
+    #clock-text{
+        color: white;
+        position: relative;
+        left: 23px;
+        top: -3px;
+        width: 96px;
+        font-size: 4vh;
+        font-weight: 500;
+        display: block;
+    }
 }
 
 #menu-btns, #nav-btns{
