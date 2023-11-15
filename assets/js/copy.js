@@ -23,7 +23,8 @@ function copyText(type){
 function openPage(type){
     const typeArray = {
         "jhdiscord":"https://discord.gg/xZ654hAE75", // JingHai Discord
-        "lyBilibili":"https://live.bilibili.com/27726467" // LingyunAwA B站直播间
+        "lyBilibili":"https://live.bilibili.com/27726467", // LingyunAwA B站直播间
+        "lyHuya":"https://huya.com/lingyunawa" // LingyunAwA 虎牙直播间
     }
     window.open(typeArray[type])
 }

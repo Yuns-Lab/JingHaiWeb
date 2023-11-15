@@ -6,3 +6,6 @@
 
 # TTF 字体
 /assets/css/fonts/*.ttf
+
+# 仅存放备注
+notebook.html
