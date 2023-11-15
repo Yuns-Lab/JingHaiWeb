@@ -98,7 +98,7 @@ h1.part_title.small {
 }
 #clock #clock-svg {
   position: absolute;
-  right: calc(23px + 9vh);
+  right: 10vh;
 }
 #clock #clock-svg #clock-svg-path {
   fill: white;
@@ -188,7 +188,7 @@ h1.part_title.small {
 }
 #navbar #nav-clock {
   position: absolute;
-  left: 170vh;
+  right: 26.9vh;
   top: 1.7vh;
 }
 #navbar #nav-clock #nav-clock-svg {
